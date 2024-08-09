@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import ajit from "./app/assets/clients-background.png";
 
 const config: Config = {
   content: [
