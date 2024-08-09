@@ -19,10 +19,10 @@ export const ProjectContainer = () => {
           Portfolio...
         </div>
 
-        <div className="flex md:items-end md:justify-between flex-col md:flex-row gap-10 ">
+        <div className="flex md:items-end md:justify-between flex-col md:flex-row gap-y-10 ">
           {/* Text show*/}
-          <div className="font-extrabold dark:text-black  md:leading-[50px] md:w-[70%] md:text-[44px] lg:text-[52px] text-3xl">
-            I Make Beautiful <div className="pt-2">Things!</div>
+          <div className="font-extrabold flex flex-wrap flex-row gap-x-1.5 dark:text-black md:leading-[50px] md:flex-col  md:w-[70%] md:text-[44px] lg:text-[52px] text-3xl">
+            I Make Beautiful <div className="md:pt-2">Things!</div>
           </div>
           <button className="h-12 shadow-2xl bg-[#0081FF] hover:bg-sky-500 md:w-60 w-full rounded-3xl px-4 text-[#FFF] font-bold">
             VIEW ALL PROJECTS
@@ -43,7 +43,7 @@ const ImageCardInfo = ({
   description: string;
 }) => {
   return (
-    <div className="relative fit  overflow-hidden group">
+    <div className="relative fit  overflow-hidden group cursor-pointer">
       <Image
         src={img}
         alt="Image"
