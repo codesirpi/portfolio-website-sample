@@ -3,12 +3,16 @@ import React from "react";
 
 const AboutInfo = () => {
   return (
-    <div className=" w-full max-w-[770px] xl:max-w-[1440px] bg-[#0081FF] flex justify-between box-border px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px]">
+    <div className=" w-full max-w-[722px] xl:max-w-[1440px] bg-[#0081FF] flex justify-between box-border px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px]">
       <div>
         <div>
-          <div className={`mb-[32px] text-[28px] ${leckerliOne.className}`}>About me...</div>
+          <div className={`mb-[32px] text-[28px] ${leckerliOne.className}`}>
+            About me...
+          </div>
           <div className="flex flex-col gap-x-[120px] xl:flex-row">
-            <div className={`text-[52px] font-bold mb-11 ${montserratBold.className} leading-[60px] xl:max-w-[526px]`}>
+            <div
+              className={`text-[32px] leading-10 font-bold mb-11 ${montserratBold.className}  md:text-[48px] md:leading-[60px] xl:text-[52px] xl:max-w-[526px]`}
+            >
               Visionary design for the web shaping the future of online
               experiences
             </div>
