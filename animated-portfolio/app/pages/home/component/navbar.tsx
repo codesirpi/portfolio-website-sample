@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 import React from "react";
 import logo from "../../../../public/images/logo.png";
 import { motion } from "framer-motion";
@@ -23,20 +24,12 @@ export const NavBarSection = () => {
       </div>
       <div className="md:hidden">
         <button className="text-white focus:outline-none">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
+          <Icon
+            icon="icon-park:hamburger-button"
+            width="24px"
+            height="24px"
+            // style={{ color: "white" }}
+          />
         </button>
       </div>
       <ul className="md:flex space-x-6  hidden">
