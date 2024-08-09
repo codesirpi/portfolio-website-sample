@@ -1,9 +1,10 @@
-import Image from "next/image";
+import AboutSection from "./components/about-section/about-section";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>hellooo</h1>
+    // <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="">
+      <AboutSection />
     </main>
   );
 }
