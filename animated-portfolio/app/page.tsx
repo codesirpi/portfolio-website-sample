@@ -1,8 +1,10 @@
 import AboutSection from "./components/about-section/about-section";
 import { ClientsSection } from "./components/clients-section";
 import { ContactSection } from "./components/contact-section";
+import { StacksSection } from "./components/stacks-section";
 import { PortFolioSection } from "./components/portfolio-section";
 import HeroSection from "./pages/home/page";
+
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <PortFolioSection/>
       <ClientsSection />
+      <StacksSection />
       <ContactSection />
      </main>
   );
