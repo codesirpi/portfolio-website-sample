@@ -14,23 +14,18 @@ import image5 from '../assets/portfolio-section/svg5.png';
 export const ProjectContainer  = () => {
     return (
         <div className="flex flex-col bg-white w-full items-center justify-center">
-           <div className='flex flex-col w-[50%] h-[374.38px] justify-center'>
+           <div className='flex flex-col w-full lg:px-[200px] md:px-16 px-5 py-14 h-[375px] gap-10 lg:justify-center'>
                 {/* container section */}
 
-                <div className={`flex flex-row text-[#B3B3B3] font-normal text-lg py-2 ${leckerliOne.className}`}>Portfolio...</div>
+                <div className={`flex flex-row text-[#B3B3B3] font-normal md:text-3xl text-2xl py-2 ${leckerliOne.className}`}>Portfolio...</div>
 
-                <div className='flex flex-col'> 
-                    <div className="grid lg:grid-cols-2 grid-cols-1 justify-items-stretch justify-end">
+                    <div className="flex md:items-end md:justify-between flex-col md:flex-row gap-10 ">
                         {/* Text show*/}
-                        <div className="font-extrabold  md:text-[52px]">
-                            I Make Beautiful<br/> Things!
+                        <div className="font-extrabold md:leading-[50px] md:w-[70%] md:text-[44px] lg:text-[52px] text-3xl">
+                            I Make Beautiful <div className='pt-2'>Things!</div>
                         </div>
-                        {/* button */}
-                        <div className="flex justify-center text-xs items-end">
-                            <button className="h-12 shadow-2xl mb-4 bg-[#0081FF] hover:bg-sky-500 lg:w-60 w-full rounded-3xl px-4 text-[#FFF] font-bold">VIEW ALL PROJECTS</button>
-                        </div>
+                        <button className="h-12 shadow-2xl bg-[#0081FF] hover:bg-sky-500 md:w-60 w-full rounded-3xl px-4 text-[#FFF] font-bold">VIEW ALL PROJECTS</button>
                     </div>
-                </div>
            </div>
         </div>
     )
