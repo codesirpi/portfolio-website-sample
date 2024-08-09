@@ -19,7 +19,7 @@ export const coustard = Coustard({
 });
 export const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: "400",
+  weight: "800",
 });
 export const cambay = Cambay({
   subsets: ["latin"],
