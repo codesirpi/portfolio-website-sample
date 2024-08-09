@@ -56,7 +56,7 @@ const AboutContact = () => {
         <div className={`text-2xl ${cambay.className}`}>
           If you like my works Follow me:
         </div>
-        <div className="flex gap-7 flex-wrap  md:w-[255px] md:justify-end xl:w-fit">
+        <div className="flex gap-x-[20px] gap-y-7 flex-wrap  md:w-[255px] md:gap-x-7 md:justify-end xl:w-fit">
           {SocialMediaData.map((data, index) => (
             <a key={index} href={data.url} target="blank">
               <Image
