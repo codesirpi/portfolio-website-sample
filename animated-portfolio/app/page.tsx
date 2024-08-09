@@ -1,14 +1,17 @@
-import Image from "next/image";
+import AboutSection from "./components/about-section/about-section";
 import { ClientsSection } from "./components/clients-section";
 import { ContactSection } from "./components/contact-section";
+import { PortFolioSection } from "./components/portfolio-section";
 import HeroSection from "./pages/home/page";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
-      <HeroSection />
+    <main className="flex min-h-screen flex-col items-center justify-between ">
+      <HeroSection/>
+      <AboutSection />
+      <PortFolioSection/>
       <ClientsSection />
       <ContactSection />
-    </main>
+     </main>
   );
 }
