@@ -3,14 +3,13 @@ import React from "react";
 import Image from "next/image";
 import heroImage from "../../../public/images/heroimage.png";
 import { NavBarSection } from "./component/navbar";
-
+import { cambay, coustard, leckerliOne, montserrat } from "../../layout";
 const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="relative bg-cover bg-center bg-no-repeat h-screen"
+      className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image"
     >
-      <Image src={heroImage} alt="Hero Section Image" />
       <div className="absolute w-full top-0">
         <NavBarSection />
       </div>
