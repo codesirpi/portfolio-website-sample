@@ -102,7 +102,7 @@ const projectImages = [
 
 export const PortFolioSection = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
             <ProjectContainer/>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
                 {
