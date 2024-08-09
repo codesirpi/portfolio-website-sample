@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        leckerli: ["Leckerli One", "cursive"],
+        cambay: ["Cambay", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

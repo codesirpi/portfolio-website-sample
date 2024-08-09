@@ -1,6 +1,5 @@
 import Image from "next/image";
-
-import HeroSection from "./components/hero-section";
+import HeroSection from "./pages/home/page";
 
 export default function Home() {
   return (
