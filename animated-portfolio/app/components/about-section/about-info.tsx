@@ -1,4 +1,4 @@
-import { cambay, leckerliOne, montserrat } from "@/app/layout";
+import { cambay, leckerliOne, montserratBold } from "@/app/layout";
 import React from "react";
 
 const AboutInfo = () => {
@@ -8,7 +8,7 @@ const AboutInfo = () => {
         <div>
           <div className={`mb-[32px] text-[28px] ${leckerliOne.className}`}>About me...</div>
           <div className="flex flex-col gap-x-[120px] xl:flex-row">
-            <div className={`text-[52px] font-bold mb-11 ${montserrat.className} xl:max-w-[526px]`}>
+            <div className={`text-[52px] font-bold mb-11 ${montserratBold.className} leading-[60px] xl:max-w-[526px]`}>
               Visionary design for the web shaping the future of online
               experiences
             </div>
