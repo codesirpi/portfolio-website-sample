@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-
 import { NavBarSection } from "./navbar";
 const HeroSection = () => {
   return (
     <div
-      id="hero"
-      className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image w-full "
+      id="#home-target"
+      className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image w-full"
     >
       <div className=" w-full fixed top-0">
         <NavBarSection />
