@@ -128,7 +128,7 @@ export const NavBarSection = () => {
                   key={link.href}
                   href={link.href}
                   style={{ textDecoration: "none" }}
-                  className="cursor-pointer  text-black lg:text-white hover:text-[#0081FF]"
+                  className="cursor-pointer  text-black lg:text-white hover:text-primary"
                 >
                   {" "}
                   <motion.span>{link.label} </motion.span>
@@ -147,7 +147,7 @@ export const NavBarSection = () => {
                 key={link.href}
                 href={link.href}
                 style={{ textDecoration: "none" }}
-                className="cursor-pointer  text-white hover:text-[#0081FF]"
+                className="cursor-pointer  text-white hover:text-primary"
               >
                 {" "}
                 <motion.span>{link.label} </motion.span>
