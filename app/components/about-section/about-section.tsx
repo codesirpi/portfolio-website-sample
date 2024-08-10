@@ -5,7 +5,10 @@ import AboutContact from "./about-contact";
 
 const AboutSection = () => {
   return (
-    <div className="bg-[#0081FF] text-white  w-full flex flex-col items-center">
+    <div
+      id="about"
+      className="bg-[#0081FF] text-white  w-full flex flex-col items-center"
+    >
       <AboutInfo />
       <AboutDetails />
       <AboutContact />

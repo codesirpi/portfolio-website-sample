@@ -2,10 +2,33 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
+import blueLogo from "../../assets/logoWhite.svg";
 import { motion } from "framer-motion";
 export const NavBarSection = () => {
+  const [bgColor, setBgColor] = useState("bg-transparent text-white");
+  const [logoColor, setLogoColor] = useState("text-white");
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentSection = document.getElementById("about");
+      if (currentSection) {
+        const sectionTop = currentSection.getBoundingClientRect().top;
+        if (sectionTop <= 0) {
+          setBgColor("bg-white text-black");
+          setLogoColor("text-[#0081FF]");
+        } else {
+          setBgColor("bg-transparent text-white");
+          setLogoColor("text-white");
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const hideNavItemsVariant = {
     opened: {
@@ -91,24 +114,31 @@ export const NavBarSection = () => {
   const fadeInEnd = { opacity: 1 };
   const fadeInTransition = { duration: 1 };
   const links = [
-    { label: "intro", href: "/#home-target" },
-    { label: "aboutme", href: "/#about" },
-    { label: "portfolio", href: "/#portfolio" },
-    { label: "clients", href: "/#clients" },
-    { label: "stacks", href: "/#stacks" },
-    { label: "contacts", href: "/#contacts" },
+    { label: "Intro", href: "/#home-target" },
+    { label: "About me", href: "/#about" },
+    { label: "Portfolio", href: "/#portfolio" },
+    { label: "Clients", href: "/#clients" },
+    { label: "Stacks", href: "/#stacks" },
+    { label: "Contacts", href: "/#contacts" },
   ];
   const MotionLink = motion(Link);
   return (
-    <div className=" w-full mx-auto h-full  md:h-[88px] text-white flex justify-between items-center bg-white md:bg-transparent   py-4 px-8">
-      <div className="text-2xl font-bold flex gap-2">
+    <div
+      className={`w-full  h-screen  md:h-[80px]  flex  justify-between px-12  items-center  ${bgColor}`}
+    >
+      <div className="text-2xl font-bold flex gap-2  ">
         {" "}
-        <Image src={logo} width={20} height={20} alt="Picture of the author" />
-        <span className="text-black lg:text-white">DanRay</span>
+        {logoColor === "text-white" ? (
+          <Image src={logo} width={24} height={28} alt="logo" />
+        ) : (
+          <Image src={blueLogo} width={24} height={28} alt="logo" />
+        )}
+        {/* <Image src={logo} width={24} height={28} alt="logo" /> */}
+        <span className={`${logoColor}`}>DanRay</span>
       </div>
       <motion.div
         variants={hideNavItemsVariant}
-        className="md:hidden flex items-center gap  flex-col"
+        className="md:hidden flex items-center gap   flex-col bg-white w-full fixed top-0"
         onClick={() => setMobileNavOpen(true)}
       >
         <button className="text-white focus:outline-none">
@@ -120,7 +150,7 @@ export const NavBarSection = () => {
           />
         </button>
         {/* mobile menu */}
-        <ul className="flex flex-col  space-y-6 items-center   md:hidden">
+        <ul className="flex flex-col  space-y-10 items-center   md:hidden absolute">
           {links.map((link) => {
             return (
               <motion.li key={link.href}>
@@ -128,7 +158,7 @@ export const NavBarSection = () => {
                   key={link.href}
                   href={link.href}
                   style={{ textDecoration: "none" }}
-                  className="cursor-pointer  text-black lg:text-white hover:text-[#0081FF]"
+                  className="cursor-pointer  text-black lg:text-white text-sm md:text-lg font-medium hover:text-[#0081FF]"
                 >
                   {" "}
                   <motion.span>{link.label} </motion.span>
@@ -139,7 +169,7 @@ export const NavBarSection = () => {
         </ul>
       </motion.div>
 
-      <ul className="md:flex  space-x-6   hidden">
+      <ul className="md:flex  md:space-x-8   hidden ">
         {links.map((link) => {
           return (
             <motion.li key={link.href}>
@@ -147,7 +177,7 @@ export const NavBarSection = () => {
                 key={link.href}
                 href={link.href}
                 style={{ textDecoration: "none" }}
-                className="cursor-pointer  text-white hover:text-[#0081FF]"
+                className="cursor-pointer text-sm md:text-lg font-medium  hover:text-[#0081FF]"
               >
                 {" "}
                 <motion.span>{link.label} </motion.span>
@@ -156,10 +186,6 @@ export const NavBarSection = () => {
           );
         })}
       </ul>
-      <div className=" w-[198px] h-[40px] hidden   border rounded-[18px] md:flex items-center justify-center">
-        {" "}
-        <button> FREE DOWNLOAD</button>
-      </div>
     </div>
   );
 };
