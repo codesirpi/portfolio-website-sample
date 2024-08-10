@@ -1,10 +1,11 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
+
 export const NavBarSection = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const hideNavItemsVariant = {
@@ -91,14 +92,14 @@ export const NavBarSection = () => {
   const fadeInEnd = { opacity: 1 };
   const fadeInTransition = { duration: 1 };
   const links = [
-    { label: "intro", href: "/#home-target" },
-    { label: "aboutme", href: "/#about" },
-    { label: "portfolio", href: "/#portfolio" },
-    { label: "clients", href: "/#clients" },
-    { label: "stacks", href: "/#stacks" },
-    { label: "contacts", href: "/#contacts" },
+    { label: "Intro", href: "home-target" },
+    { label: "About me", href: "about" },
+    { label: "Portfolio", href: "portfolio" },
+    { label: "Clients", href: "clients" },
+    { label: "Stacks", href: "stacks" },
+    { label: "Contacts", href: "contacts" },
   ];
-  const MotionLink = motion(Link);
+  // const MotionLink = motion(Link);
   return (
     <div className=" w-full mx-auto h-full  md:h-[88px] text-white flex justify-between items-center bg-white md:bg-transparent   py-4 px-8">
       <div className="text-2xl font-bold flex gap-2">
@@ -108,7 +109,7 @@ export const NavBarSection = () => {
       </div>
       <motion.div
         variants={hideNavItemsVariant}
-        className="md:hidden flex items-center gap  flex-col"
+        className="md:hidden flex items-center  flex-col"
         onClick={() => setMobileNavOpen(true)}
       >
         <button className="text-white focus:outline-none">
@@ -120,43 +121,45 @@ export const NavBarSection = () => {
           />
         </button>
         {/* mobile menu */}
-        <ul className="flex flex-col  space-y-6 items-center   md:hidden">
+        <ul className="flex flex-col space-y-6 items-center md:hidden">
           {links.map((link) => {
             return (
               <motion.li key={link.href}>
-                <MotionLink
-                  key={link.href}
-                  href={link.href}
+                <Link
+                  to={link.href}
+                  smooth={true}
+                  duration={500}
                   style={{ textDecoration: "none" }}
                   className="cursor-pointer  text-black lg:text-white hover:text-primary"
                 >
                   {" "}
                   <motion.span>{link.label} </motion.span>
-                </MotionLink>
+                </Link>
               </motion.li>
             );
           })}
         </ul>
       </motion.div>
 
-      <ul className="md:flex  space-x-6   hidden">
+      <ul className="md:flex space-x-6 hidden">
         {links.map((link) => {
           return (
             <motion.li key={link.href}>
-              <MotionLink
-                key={link.href}
-                href={link.href}
+              <Link
+                to={link.href}
+                smooth={true}
+                duration={500}
                 style={{ textDecoration: "none" }}
                 className="cursor-pointer  text-white hover:text-primary"
               >
                 {" "}
                 <motion.span>{link.label} </motion.span>
-              </MotionLink>
+              </Link>
             </motion.li>
           );
         })}
       </ul>
-      <div className=" w-[198px] h-[40px] hidden   border rounded-[18px] md:flex items-center justify-center">
+      <div className=" w-[198px] h-[40px] hidden border rounded-[18px] md:flex items-center justify-center">
         {" "}
         <button> FREE DOWNLOAD</button>
       </div>
