@@ -1,14 +1,14 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import heroImage from "../../../public/images/heroimage.png";
-import { NavBarSection } from "./component/navbar";
-import { cambay, coustard, leckerliOne, montserrat } from "../../layout";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import heroImage from '../../../public/images/heroimage.png';
+import { NavBarSection } from './component/navbar';
+import { cambay, coustard, leckerliOne, montserrat } from '../../layout';
 const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image"
+      className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image w-full"
     >
       <div className="absolute w-full top-0">
         <NavBarSection />
@@ -20,7 +20,7 @@ const HeroSection = () => {
               Hi there!
             </span>
             <span className="text-4xl  font-bold">
-              I'm{" "}
+              I'm{' '}
               <span className="text-[#0081FF] text-lg md:text-[40px] font-extrabold">
                 Daniel Ray
               </span>
@@ -32,7 +32,7 @@ const HeroSection = () => {
               with unrivaled creativity.
             </p>
             <div className=" rounded-3xl shadow-md  bg-[#303030] text-[10px] md:text-sm lg:text-lg   px-4 w-40 py-2 text-center">
-              {" "}
+              {' '}
               ABOUT ME
             </div>
           </div>
