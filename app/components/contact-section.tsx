@@ -62,16 +62,16 @@ export const ContactSection = () => {
           Contact Information
         </div>
         <div className="text-xl">
-          <div className="text-[#707070] pb-1">You can find me here:</div>
+          <div className="text-grey-300 pb-1">You can find me here:</div>
           <div>795 South Park Avenue, Melbourne, Australia</div>
         </div>
         <div className="flex gap-3 items-end ">
-          <span className="text-xl text-[#707070]">My time</span>
+          <span className="text-xl text-grey-300">My time</span>
           <span className={`${montserrat.className} text-[32px] font-semibold`}>
             6:54 PM
           </span>
         </div>
-        <div className="text-xl text-[#0081FF]">codesirpi@gmail.com</div>
+        <div className="text-xl text-primary">codesirpi@gmail.com</div>
         <div className="flex gap-[24px] flex-wrap">
           {SocialMedia.map((dt) => {
             return (
@@ -94,24 +94,24 @@ export const ContactSection = () => {
         >
           Get In Touch
         </div>
-        <div className="text-[#707070] text-xl">
+        <div className="text-grey-300 text-xl">
           You can contact with me using this form.
         </div>
         <div className="flex gap-10">
           <input
-            className="text-[#5C5C5C] bg-[#303030] rounded-[28px] h-10  w-[50%] px-5"
+            className="text-grey-400 bg-grey-500 rounded-[28px] h-10  w-[50%] px-5"
             placeholder="Your Name"
           />
           <input
-            className="text-[#5C5C5C] bg-[#303030] rounded-[28px] h-10 w-[50%] px-5"
+            className="text-grey-400 bg-grey-500 rounded-[28px] h-10 w-[50%] px-5"
             placeholder="Your Email Address"
           />
         </div>
         <textarea
-          className="text-[#5C5C5C] bg-[#303030] border-0 rounded-[28px] h-24 w-full p-5"
+          className="text-grey-400 bg-grey-500 border-0 rounded-[28px] h-24 w-full p-5"
           placeholder="Type in Your message..."
         />
-        <button className="bg-[#0081FF] text-white w-full h-10 rounded-[28px]">
+        <button className="bg-primary text-white w-full h-10 rounded-[28px]">
           SEND
         </button>
       </div>

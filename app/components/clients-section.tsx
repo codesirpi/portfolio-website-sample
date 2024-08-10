@@ -21,7 +21,7 @@ export const ClientsSection = () => {
       </div>
       <div className="text-xl flex flex-col gap-2 relative">
         <div
-          className={`text-center text-[100px] text-[#454545] absolute left-[50%] top-2 z-1 ${coustard.className}`}
+          className={`text-center text-[100px] text-grey-100 absolute left-[50%] top-2 z-1 ${coustard.className}`}
         >
           “{" "}
         </div>
@@ -36,11 +36,11 @@ export const ClientsSection = () => {
           <Image src={ProfileIcon} alt="profilePic" width={50} />
           <div className="flex flex-col leading-6">
             <span
-              className={`text-[#FF0] font-bold text-base ${montserrat.className}`}
+              className={`text-yellow font-bold text-base ${montserrat.className}`}
             >
               Emma Watson
             </span>
-            <span className={`text-[#707070] text-sm ${cambay.className}`}>
+            <span className={`text-grey-300 text-sm ${cambay.className}`}>
               Marketing Leader
             </span>
           </div>

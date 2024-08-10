@@ -21,7 +21,7 @@ const HeroSection = () => {
             </span>
             <span className="text-4xl  font-bold">
               I'm{' '}
-              <span className="text-[#0081FF] text-lg md:text-[40px] font-extrabold">
+              <span className="text-primary text-lg md:text-[40px] font-extrabold">
                 Daniel Ray
               </span>
             </span>
@@ -31,7 +31,7 @@ const HeroSection = () => {
               captivating digital experiences. Here, your vision comes to life
               with unrivaled creativity.
             </p>
-            <div className=" rounded-3xl shadow-md  bg-[#303030] text-[10px] md:text-sm lg:text-lg   px-4 w-40 py-2 text-center">
+            <div className=" rounded-3xl shadow-md  bg-grey-500 text-[10px] md:text-sm lg:text-lg   px-4 w-40 py-2 text-center">
               {' '}
               ABOUT ME
             </div>

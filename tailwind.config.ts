@@ -8,6 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#0081FF",
+        yellow: "#FF0",
+        white: "#FFF",
+        grey: {
+          500: "#303030",
+          400: "#5C5C5C",
+          300: "#707070",
+          200: "#B3B3B3",
+          100: "#454545",
+          50: "#9E9E9E"
+        },
+        blue: {
+          500: "#06c",
+        },
+
+      },
       fontFamily: {
         leckerli: ["Leckerli One", "cursive"],
         cambay: ["Cambay", "sans-serif"],

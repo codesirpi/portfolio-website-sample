@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutInfo = () => {
   return (
-    <div className=" w-full max-w-[722px] xl:max-w-[1440px] bg-[#0081FF] flex justify-between box-border px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px]">
+    <div className=" w-full max-w-[722px] xl:max-w-[1440px] bg-primary flex justify-between box-border px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px]">
       <div>
         <div>
           <div className={`mb-[32px] text-[28px] ${leckerliOne.className}`}>

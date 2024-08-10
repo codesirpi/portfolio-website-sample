@@ -10,7 +10,7 @@ export const StacksSection = () => {
     >
       <div className="h-full flex flex-col gap-6 p-10 pt-12">
         <div
-          className={`lg:text-[28px] text-lg text-[#B3B3B3] ${leckerliOne.className}`}
+          className={`lg:text-[28px] text-lg text-grey-200 ${leckerliOne.className}`}
         >
           Stacks...
         </div>
@@ -19,7 +19,7 @@ export const StacksSection = () => {
         >
           Basics of my creativity
         </div>
-        <div className="text-[#707070]">
+        <div className="text-grey-300">
           I use a sophisticated set of design and development tools to bring
           each vision to life, balancing aesthetics and functionality.
         </div>
@@ -33,7 +33,7 @@ export const StacksSection = () => {
         }
         containerBg={"bg-black"}
         countColor={"white"}
-        projectTextColor={"text-[#707070]"}
+        projectTextColor={"text-grey-300"}
         descriptionColor={"white"}
       />
       <StacksCard
@@ -42,7 +42,7 @@ export const StacksSection = () => {
         description={
           "My work at Framer demonstrates a deep understanding of motion and interaction design, resulting in designs that are as intuitive as they are beautiful."
         }
-        containerBg={"bg-[#0081FF]"}
+        containerBg={"bg-primary"}
         countColor={"text-white"}
         projectTextColor={"text-white"}
         descriptionColor={"text-white"}
@@ -56,8 +56,8 @@ export const StacksSection = () => {
         }
         containerBg={"bg-white"}
         countColor={"text-black"}
-        projectTextColor={"text-[#9E9E9E]"}
-        descriptionColor={"text-[#707070]"}
+        projectTextColor={"text-grey-50"}
+        descriptionColor={"text-grey-300"}
       />
     </div>
   );
