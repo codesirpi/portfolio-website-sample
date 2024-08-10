@@ -1,49 +1,49 @@
-import React from "react";
-import { cambay, leckerliOne, montserrat } from "../layout";
-import { Icon } from "@iconify/react";
-import { Footer } from "./footer";
+import React from 'react';
+import { cambay, leckerliOne, montserrat } from '../utils/fonts';
+import { Icon } from '@iconify/react';
+import { Footer } from './footer';
 
 export const ContactSection = () => {
   const SocialMedia = [
     {
       id: 1,
-      imageSource: "mingcute:facebook-fill",
-      url: "https://www.facebook.com/",
+      imageSource: 'mingcute:facebook-fill',
+      url: 'https://www.facebook.com/',
     },
     {
       id: 2,
-      imageSource: "mingcute:twitter-fill",
-      url: "https://x.com/",
+      imageSource: 'mingcute:twitter-fill',
+      url: 'https://x.com/',
     },
     {
       id: 3,
-      imageSource: "mingcute:linkedin-fill",
-      url: "https://in.linkedin.com/",
+      imageSource: 'mingcute:linkedin-fill',
+      url: 'https://in.linkedin.com/',
     },
     {
       id: 4,
-      imageSource: "ri:instagram-fill",
-      url: "https://www.instagram.com/",
+      imageSource: 'ri:instagram-fill',
+      url: 'https://www.instagram.com/',
     },
     {
       id: 5,
-      imageSource: "mingcute:dribbble-fill",
-      url: "https://dribbble.com/",
+      imageSource: 'mingcute:dribbble-fill',
+      url: 'https://dribbble.com/',
     },
     {
       id: 6,
-      imageSource: "mage:behance",
-      url: "https://dribbble.com/",
+      imageSource: 'mage:behance',
+      url: 'https://dribbble.com/',
     },
     {
       id: 7,
-      imageSource: "ant-design:youtube-filled",
-      url: "https://www.youtube.com/",
+      imageSource: 'ant-design:youtube-filled',
+      url: 'https://www.youtube.com/',
     },
     {
       id: 7,
-      imageSource: "mdi:pinterest",
-      url: "https://www.pinterest.com/",
+      imageSource: 'mdi:pinterest',
+      url: 'https://www.pinterest.com/',
     },
   ];
 

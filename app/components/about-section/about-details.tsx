@@ -1,10 +1,10 @@
-import React from "react";
-import interfaceIcon from "../../assets/about-section/interface.svg";
-import identityIcon from "../../assets/about-section/identity.svg";
-import webFlowIcon from "../../assets/about-section/webflow.svg";
-import Image from "next/image";
-import { Cambay } from "next/font/google";
-import { cambay, montserrat } from "@/app/layout";
+import React from 'react';
+import interfaceIcon from '../../assets/about-section/interface.svg';
+import identityIcon from '../../assets/about-section/identity.svg';
+import webFlowIcon from '../../assets/about-section/webflow.svg';
+import Image from 'next/image';
+import { Cambay } from 'next/font/google';
+import { cambay, montserrat } from '../../utils/fonts';
 
 const AboutDetails = () => {
   return (
@@ -18,7 +18,9 @@ const AboutDetails = () => {
               className="w-[60px] h-[60px]"
             />
             <div className="text-lg">
-              <div className={`font-bold mb-4 ${montserrat.className}`}>Web Design & User Interface</div>
+              <div className={`font-bold mb-4 ${montserrat.className}`}>
+                Web Design & User Interface
+              </div>
               <div className={`${cambay.className}`}>
                 Creating captivating, easy-to- navigate websites that enhance
                 user experience and foster business growth.
@@ -32,7 +34,9 @@ const AboutDetails = () => {
               className="w-[60px] h-[60px]"
             />
             <div className="text-lg">
-              <div className={`font-bold mb-4 ${montserrat.className}`}>Brand Identity</div>
+              <div className={`font-bold mb-4 ${montserrat.className}`}>
+                Brand Identity
+              </div>
               <div className={`${cambay.className}`}>
                 Developing a unique and coherent brand identity effectively
                 communicates your brand`s ethos and distinguishes you in the
@@ -47,7 +51,9 @@ const AboutDetails = () => {
               className="w-[60px] h-[60px]"
             />
             <div className="text-lg">
-              <div className={`font-bold mb-4 ${montserrat.className}`}>Framer & Webflow Templates</div>
+              <div className={`font-bold mb-4 ${montserrat.className}`}>
+                Framer & Webflow Templates
+              </div>
               <div className={`${cambay.className}`}>
                 Designing custom, responsive templates with Framer and Webflow
                 for dynamic and efficient web solutions.

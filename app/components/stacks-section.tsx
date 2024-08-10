@@ -1,7 +1,7 @@
-import React from "react";
-import { cambay, leckerliOne, montserrat } from "../layout";
-import { Icon } from "@iconify/react";
-import { StacksCard } from "./stacks-card";
+import React from 'react';
+import { cambay, leckerliOne, montserrat } from '../utils/fonts';
+import { Icon } from '@iconify/react';
+import { StacksCard } from './stacks-card';
 
 export const StacksSection = () => {
   return (
@@ -28,37 +28,37 @@ export const StacksSection = () => {
 
       <StacksCard
         projectCount={127}
-        iconSource={"logos:figma"}
+        iconSource={'logos:figma'}
         description={
-          "My experience at Figma is reflected in a diverse collection of projects, each of which embodies our commitment to innovation, user experience and design excellence."
+          'My experience at Figma is reflected in a diverse collection of projects, each of which embodies our commitment to innovation, user experience and design excellence.'
         }
-        containerBg={"bg-black"}
-        countColor={"white"}
-        projectTextColor={"text-grey-300"}
-        descriptionColor={"white"}
+        containerBg={'bg-black'}
+        countColor={'white'}
+        projectTextColor={'text-grey-300'}
+        descriptionColor={'white'}
       />
       <StacksCard
         projectCount={37}
-        iconSource={"gg:framer"}
+        iconSource={'gg:framer'}
         description={
-          "My work at Framer demonstrates a deep understanding of motion and interaction design, resulting in designs that are as intuitive as they are beautiful."
+          'My work at Framer demonstrates a deep understanding of motion and interaction design, resulting in designs that are as intuitive as they are beautiful.'
         }
-        containerBg={"bg-primary"}
-        countColor={"text-white"}
-        projectTextColor={"text-white"}
-        descriptionColor={"text-white"}
+        containerBg={'bg-primary'}
+        countColor={'text-white'}
+        projectTextColor={'text-white'}
+        descriptionColor={'text-white'}
       />
       <StacksCard
         projectCount={14}
-        iconSource={"fa6-brands:webflow"}
-        iconColor={"#146EF5"}
+        iconSource={'fa6-brands:webflow'}
+        iconColor={'#146EF5'}
         description={
-          "Through Webflow, I have developed custom websites that are creative, productive, and easy to use, and that meet a variety of client needs."
+          'Through Webflow, I have developed custom websites that are creative, productive, and easy to use, and that meet a variety of client needs.'
         }
-        containerBg={"bg-white"}
-        countColor={"text-black"}
-        projectTextColor={"text-grey-50"}
-        descriptionColor={"text-grey-300"}
+        containerBg={'bg-white'}
+        countColor={'text-black'}
+        projectTextColor={'text-grey-50'}
+        descriptionColor={'text-grey-300'}
       />
     </div>
   );
