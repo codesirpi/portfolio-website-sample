@@ -6,6 +6,7 @@ import { StacksCard } from "./stacks-card";
 export const StacksSection = () => {
   return (
     <div
+      id="stacks"
       className={`bg-white w-full grid lg:grid-cols-2 lg:px-[200px] px-5 lg:py-[100px] p-10 ${cambay.className}`}
     >
       <div className="h-full flex flex-col gap-6 p-10 pt-12">

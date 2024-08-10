@@ -1,27 +1,30 @@
 import React from "react";
 import ProfileIcon from "../assets/profile.png";
-import Client1 from "../assets/client-1.png";
-import Client2 from "../assets/client-2.png";
-import Client3 from "../assets/client-3.png";
-import Client4 from "../assets/client-4.png";
+import Client1 from "../assets/client-4.png";
+import Client2 from "../assets/client-3.png";
+import Client3 from "../assets/client-2.png";
+import Client4 from "../assets/client-1.png";
 
 import Image from "next/image";
 import { cambay, coustard, leckerliOne, montserrat } from "../layout";
 
 export const ClientsSection = () => {
   return (
-    <div className="bg-client-background w-full h-full text-white items-center flex flex-col gap-10 lg:px-[200px] px-5 bg-cover lg:py-[100px] p-10 md:gap-16">
-      <div className={`lg:text-[28px] text-lg ${leckerliOne.className}`}>
+    <div
+      className="bg-client-background w-full lg:h-screen text-white items-center flex flex-col gap-10 lg:px-[200px] py-20 px-5 bg-cover lg:py-[100px] p-10 md:gap-16"
+      id="clients"
+    >
+      <div className={`lg:text-[28px] text-[22px] ${leckerliOne.className}`}>
         Clients...
       </div>
       <div
-        className={`lg:text-[52px] font-extrabold md:text-4xl text-2xl ${montserrat.className}`}
+        className={`lg:text-[52px] font-extrabold md:text-4xl text-3xl text-center ${montserrat.className}`}
       >
         What Customers Say:
       </div>
-      <div className="text-xl flex flex-col gap-2 relative">
+      <div className="text-xl flex flex-col gap-2 relative lg:w-[75%] w-full">
         <div
-          className={`text-center text-[100px] text-[#454545] absolute left-[50%] top-2 z-1 ${coustard.className}`}
+          className={`text-center lg:text-[100px] text-[#454545] absolute text-[150px] md:left-[50%] md:top-2 top-8 left-[40%] z-1 ${coustard.className}`}
         >
           “{" "}
         </div>
@@ -46,7 +49,7 @@ export const ClientsSection = () => {
           </div>
         </div>
       </div>
-      <div className=" border-t flex justify-center w-full lg:pt-20 md:pt-10 lg:gap-20 md:gap-10 flex-wrap items-center pt-10 gap-10">
+      <div className=" border-t border-[#303030] flex justify-center w-full lg:pt-20 md:pt-10 lg:gap-16 md:gap-10 flex-wrap items-center pt-10 gap-10">
         <Image
           src={Client1}
           alt="Client-1"
