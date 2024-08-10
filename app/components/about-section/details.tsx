@@ -28,8 +28,8 @@ const Details = () => {
   ];
 
   return (
-    <div className="bg-[#06c] w-full h-auto flex flex-col items-center">
-      <div className=" max-w-[722px] bg-[#06c] flex justify-center px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px] xl:max-w-[1440px]">
+    <div className="bg-blue-500 w-full h-auto flex flex-col items-center">
+      <div className=" max-w-[722px] bg-blue-500 flex justify-center px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px] xl:max-w-[1440px]">
         <div className="flex flex-col gap-11 md:flex-row md:gap-7">
           {detailsData.map(({ image, head, content }, index) => (
             <div className="flex flex-col gap-7 xl:flex-row" key={index}>
@@ -42,9 +42,7 @@ const Details = () => {
                 <div className={`font-bold mb-4 ${montserrat.className}`}>
                   {head}
                 </div>
-                <div className={` ${cambay.className}`}>
-                  {content}
-                </div>
+                <div className={` ${cambay.className}`}>{content}</div>
               </div>
             </div>
           ))}
