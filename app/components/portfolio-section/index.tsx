@@ -9,49 +9,55 @@ import image2 from "../../assets/portfolio-section/svg2.png";
 import image3 from "../../assets/portfolio-section/svg3.png";
 import image4 from "../../assets/portfolio-section/svg4.png";
 import image5 from "../../assets/portfolio-section/svg5.png";
+import image6 from "../../assets/portfolio-section/svg6.png";
+import image7 from "../../assets/portfolio-section/svg7.png";
+import image8 from "../../assets/portfolio-section/svg8.png";
+import image9 from "../../assets/portfolio-section/svg9.png";
+
+
 
 const projectImages = [
     {
       img: image1,
       title: "Web Design",
-      description: "Elegant Web Design",
+      description: "Elegant Dark Website Design",
     },
   
     {
       img: image2,
-      title: "Web Design",
-      description: "Elegant Web Design",
+      title: " Brand Identity",
+      description: "Ridged Beer can design",
     },
     {
       img: image3,
-      title: "Web Design",
-      description: "Elegant Web Design",
+      title: "Brand Identity",
+      description: "Standup Brochure",
     },
     {
-      img: image4,
+      img: image7,
       title: "Web Design",
-      description: "Elegant Web Design",
+      description: "Landing Page for Mobile Devices",
     },
     {
       img: image5,
       title: "Web Design",
-      description: "Elegant Web Design",
+      description: "Minimalist Landing Page",
     },
     {
-      img: image1,
-      title: "Web Design",
-      description: "Elegant Web Design",
+      img: image4,
+      title: "Ui Design",
+      description: "Black Fashion User Interface",
     },
   
     {
-      img: image4,
-      title: "Web Design",
-      description: "Elegant Web Design",
+      img: image8,
+      title: "Brand Identity",
+      description: "Box Package Brand Identity Mockup Template",
     },
     {
-      img: image1,
-      title: "Web Design",
-      description: "Elegant Web Design",
+      img: image6,
+      title: "Ui Design",
+      description: "News Media Interface",
     },
   ];
   

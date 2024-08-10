@@ -20,7 +20,7 @@ export const ImageDetailCard = ({
         <div className="absolute w-full h-full inset-0 flex items-center justify-center opacity-0 bg-gray-800 bg-opacity-75 transition-opacity duration-500 group-hover:opacity-100">
           <div className="flex flex-col justify-end w-full ml-4 text-white h-full py-5">
             <h5
-              className={`mx-2 sm:text-sm lg:text-xl md:text-lg  font-normal ${leckerliOne.className} text-gray-400 `}
+              className={`mx-2 sm:text-sm lg:text-xl md:text-lg  font-normal ${leckerliOne.className} text-gray-200 `}
             >
               {title}
             </h5>
