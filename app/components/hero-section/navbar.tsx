@@ -127,49 +127,15 @@ export const NavBarSection = () => {
     <div
       className={`w-full  h-screen  md:h-[80px]  flex  justify-between px-12  items-center  ${bgColor}`}
     >
-      <div className="text-2xl font-bold flex gap-2  ">
+      <div className="text-2xl font-bold md:flex gap-2  hidden ">
         {" "}
         {logoColor === "text-white" ? (
           <Image src={logo} width={24} height={28} alt="logo" />
         ) : (
           <Image src={blueLogo} width={24} height={28} alt="logo" />
         )}
-        {/* <Image src={logo} width={24} height={28} alt="logo" /> */}
         <span className={`${logoColor}`}>DanRay</span>
       </div>
-      <motion.div
-        variants={hideNavItemsVariant}
-        className="md:hidden flex items-center gap   flex-col bg-white w-full fixed top-0"
-        onClick={() => setMobileNavOpen(true)}
-      >
-        <button className="text-white focus:outline-none">
-          <Icon
-            icon="icon-park:hamburger-button"
-            width="24px"
-            height="24px"
-            // style={{ color: "white" }}
-          />
-        </button>
-        {/* mobile menu */}
-        <ul className="flex flex-col  space-y-10 items-center   md:hidden absolute">
-          {links.map((link) => {
-            return (
-              <motion.li key={link.href}>
-                <Link
-                  to={link.href}
-                  smooth={true}
-                  duration={500}
-                  style={{ textDecoration: "none" }}
-                  className="cursor-pointer  text-black lg:text-white text-sm md:text-lg font-medium hover:text-primary"
-                >
-                  {" "}
-                  <motion.span>{link.label} </motion.span>
-                </Link>
-              </motion.li>
-            );
-          })}
-        </ul>
-      </motion.div>
 
       <ul className="md:flex space-x-6 hidden">
         {links.map((link) => {
@@ -189,6 +155,52 @@ export const NavBarSection = () => {
           );
         })}
       </ul>
+
+      {/* mobile navigation */}
+      <motion.div
+        variants={hideNavItemsVariant}
+        className="md:hidden flex items-center gap   flex-col  h-auto fixed top-0 "
+        onClick={() => setMobileNavOpen(true)}
+      >
+        <div className="flex items-center  justify-between">
+          <div className="flex">
+            {logoColor === "text-white" ? (
+              <Image src={logo} width={14} height={18} alt="logo" />
+            ) : (
+              <Image src={blueLogo} width={14} height={18} alt="logo" />
+            )}
+            <span className={`${logoColor}`}>DanRay</span>
+          </div>
+          <button className="text-white focus:outline-none">
+            <Icon
+              icon="icon-park:hamburger-button"
+              width="24px"
+              height="24px"
+            />
+          </button>
+        </div>
+
+        <div>
+          <ul className="flex flex-col  space-y-2 items-center   md:hidden absolute mt-8">
+            {links.map((link) => {
+              return (
+                <motion.li key={link.href}>
+                  <Link
+                    to={link.href}
+                    smooth={true}
+                    duration={500}
+                    style={{ textDecoration: "none" }}
+                    className="cursor-pointer  text-black lg:text-white text-sm md:text-lg font-medium hover:text-primary"
+                  >
+                    {" "}
+                    <motion.span>{link.label} </motion.span>
+                  </Link>
+                </motion.li>
+              );
+            })}
+          </ul>
+        </div>
+      </motion.div>
     </div>
   );
 };
