@@ -3,7 +3,7 @@ import { leckerliOne } from "../../layout";
 
 export const ProjectContainer = () => {
     return (
-      <div className="flex flex-col bg-white w-full items-center justify-center">
+      <div className="flex flex-col bg-white w-full items-center justify-center"  id="portfolio">
         <div className="flex flex-col w-full max-w-[722px] h-[375px] gap-10 lg:justify-center px-[17px] py-[76px] md:py-[92px] md:px-0 xl:px-[62px] xl:max-w-[1440px]">
           {/* container section */}
           <div
