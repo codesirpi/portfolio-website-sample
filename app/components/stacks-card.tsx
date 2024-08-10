@@ -23,25 +23,28 @@ export const StacksCard: React.FC<{
 }) => {
   return (
     <div
-      className={`${containerBg} text-white flex flex-col gap-5 p-10 w-full`}
+      className={`${containerBg} text-white flex flex-col ${
+        containerBg === "bg-[#252525]" ? "py-[44px] px-[17px] md:p-[125px] xl:py-[120px] xl:px-[92px]" : "py-[44px] px-[17px] md:p-[44px] xl:p-[92px]"
+      } w-full`}
     >
       <Icon
         icon={iconSource}
         width={64}
         height={64}
         color={iconColor ? iconColor : ""}
+        className="mb-10"
       />
       <div
-        className={`lg:text-[52px] font-extrabold text-4xl  ${countColor} ${montserrat.className}`}
+        className={`text-[60px] font-extrabold text-4xl mb-4  ${countColor} ${montserrat.className}`}
       >
         {projectCount}{" "}
         <span
-          className={`lg:text-[24px] text-lg font-normal w-full ${projectTextColor} ${cambay.className}`}
+          className={`tracking-[-1px] text-[24px] font-normal w-full ${projectTextColor} ${cambay.className}`}
         >
           projects completed
         </span>
       </div>
-      <div className={`${descriptionColor}`}>{description}</div>
+      <div className={`${descriptionColor} text-lg`}>{description}</div>
     </div>
   );
 };
