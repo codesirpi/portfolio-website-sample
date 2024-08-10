@@ -24,7 +24,7 @@ export const ClientsSection = () => {
       </div>
       <div className="text-xl flex flex-col gap-2 relative lg:w-[75%] w-full">
         <div
-          className={`text-center lg:text-[100px] text-[#454545] absolute text-[150px] md:left-[50%] md:top-2 top-8 left-[40%] z-1 ${coustard.className}`}
+          className={`text-center lg:text-[100px] text-grey-100 absolute text-[150px] md:left-[50%] md:top-2 top-8 left-[40%] z-1 ${coustard.className}`}
         >
           “{" "}
         </div>
@@ -39,17 +39,17 @@ export const ClientsSection = () => {
           <Image src={ProfileIcon} alt="profilePic" width={50} />
           <div className="flex flex-col leading-6">
             <span
-              className={`text-[#FF0] font-bold text-base ${montserrat.className}`}
+              className={`text-yellow font-bold text-base ${montserrat.className}`}
             >
               Emma Watson
             </span>
-            <span className={`text-[#707070] text-sm ${cambay.className}`}>
+            <span className={`text-grey-300 text-sm ${cambay.className}`}>
               Marketing Leader
             </span>
           </div>
         </div>
       </div>
-      <div className=" border-t border-[#303030] flex justify-center w-full lg:pt-20 md:pt-10 lg:gap-16 md:gap-10 flex-wrap items-center pt-10 gap-10">
+      <div className=" border-t border-grey-500 flex justify-center w-full lg:pt-20 md:pt-10 lg:gap-16 md:gap-10 flex-wrap items-center pt-10 gap-10">
         <Image
           src={Client1}
           alt="Client-1"
