@@ -7,7 +7,7 @@ import { cambay, coustard, leckerliOne, montserrat } from "../../layout";
 const HeroSection = () => {
   return (
     <div
-      id="#home-target"
+      id="home-target"
       className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image w-full"
     >
       <div className="absolute w-full top-0">
@@ -20,7 +20,7 @@ const HeroSection = () => {
               Hi there!
             </span>
             <span className="text-4xl  font-bold">
-              I'm{" "}
+              I&#39;m{" "}
               <span className="text-[#0081FF] text-lg md:text-[40px] font-extrabold">
                 Daniel Ray
               </span>

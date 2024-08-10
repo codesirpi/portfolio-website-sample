@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react";
-import Link from "next/link";
 import React from "react";
 
 export const Footer = () => {
@@ -9,14 +8,14 @@ export const Footer = () => {
         © 2024 DanRay — Personal Framer Template. Design by{" "}
         <span className="text-[#0081FF]">Ajith Kumar</span>
       </div>
-      <Link className="flex gap-2 items-center" href="/#home-target">
+      <div className="flex gap-2 items-center">
         Back to top{" "}
         <Icon
           icon="material-symbols-light:keyboard-arrow-up"
           style={{ color: "#707070" }}
           fontSize={25}
         />
-      </Link>
+      </div>
     </div>
   );
 };

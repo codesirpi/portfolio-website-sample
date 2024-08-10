@@ -11,7 +11,7 @@ import { cambay, coustard, leckerliOne, montserrat } from "../layout";
 export const ClientsSection = () => {
   return (
     <div
-      className="bg-client-background w-full lg:h-screen text-white items-center flex flex-col gap-10 lg:px-[200px] py-20 px-5 bg-cover lg:py-[100px] p-10 md:gap-16"
+      className="bg-client-background w-full lg:h-full lg:min-h-screen text-white items-center flex flex-col gap-10 lg:px-[200px] py-20 px-5 bg-cover lg:py-[100px] p-10 md:gap-16"
       id="clients"
     >
       <div className={`lg:text-[28px] text-[22px] ${leckerliOne.className}`}>
