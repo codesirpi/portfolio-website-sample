@@ -3,7 +3,6 @@ import interfaceIcon from "../../assets/about-section/interface.svg";
 import identityIcon from "../../assets/about-section/identity.svg";
 import webFlowIcon from "../../assets/about-section/webflow.svg";
 import Image from "next/image";
-import { Cambay } from "next/font/google";
 import { cambay, montserrat } from "@/app/layout";
 
 const Details = () => {

@@ -1,14 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { Icon } from "@iconify/react";
-// import facebook from "../../assets/about-section/facebook.svg";
-// import twitter from "../../assets/about-section/twitter.svg";
-// import linkedin from "../../assets/about-section/linkedin.svg";
-// import dribble from "../../assets/about-section/dribble.svg";
-// import behance from "../../assets/about-section/behance.svg";
-// import pinInterest from "../../assets/about-section/pin-interest.svg";
-// import instagram from "../../assets/about-section/instagram.svg";
-// import youtube from "../../assets/about-section/youtube.svg";
 import { cambay } from "@/app/layout";
 
 const Contact = () => {
@@ -62,10 +54,10 @@ const Contact = () => {
           If you like my works Follow me:
         </div>
         <div className="flex gap-x-[20px] gap-y-7 flex-wrap  md:w-[255px] md:gap-x-7 md:justify-end xl:w-fit">
-          {SocialMediaData.map((data, index) => (
-            <a key={index} href={data.url} target="blank">
+          {SocialMediaData.map(({ image, url }, index) => (
+            <a key={index} href={url} target="blank">
               <Icon
-                icon={data.image}
+                icon={image}
                 width={24}
                 height={24}
                 className="hover:text-[yellow]"
