@@ -1,11 +1,12 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import blueLogo from "../../assets/logoWhite.svg";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
+
 export const NavBarSection = () => {
   const [bgColor, setBgColor] = useState("bg-transparent text-white");
   const [logoColor, setLogoColor] = useState("text-white");
@@ -114,14 +115,14 @@ export const NavBarSection = () => {
   const fadeInEnd = { opacity: 1 };
   const fadeInTransition = { duration: 1 };
   const links = [
-    { label: "Intro", href: "/#home-target" },
-    { label: "About me", href: "/#about" },
-    { label: "Portfolio", href: "/#portfolio" },
-    { label: "Clients", href: "/#clients" },
-    { label: "Stacks", href: "/#stacks" },
-    { label: "Contacts", href: "/#contacts" },
+    { label: "Intro", href: "home-target" },
+    { label: "About me", href: "about" },
+    { label: "Portfolio", href: "portfolio" },
+    { label: "Clients", href: "clients" },
+    { label: "Stacks", href: "stacks" },
+    { label: "Contacts", href: "contacts" },
   ];
-  const MotionLink = motion(Link);
+  // const MotionLink = motion(Link);
   return (
     <div
       className={`w-full  h-screen  md:h-[80px]  flex  justify-between px-12  items-center  ${bgColor}`}
@@ -154,34 +155,36 @@ export const NavBarSection = () => {
           {links.map((link) => {
             return (
               <motion.li key={link.href}>
-                <MotionLink
-                  key={link.href}
-                  href={link.href}
+                <Link
+                  to={link.href}
+                  smooth={true}
+                  duration={500}
                   style={{ textDecoration: "none" }}
-                  className="cursor-pointer  text-black lg:text-white text-sm md:text-lg font-medium hover:text-[#0081FF]"
+                  className="cursor-pointer  text-black lg:text-white text-sm md:text-lg font-medium hover:text-primary"
                 >
                   {" "}
                   <motion.span>{link.label} </motion.span>
-                </MotionLink>
+                </Link>
               </motion.li>
             );
           })}
         </ul>
       </motion.div>
 
-      <ul className="md:flex  md:space-x-8   hidden ">
+      <ul className="md:flex space-x-6 hidden">
         {links.map((link) => {
           return (
             <motion.li key={link.href}>
-              <MotionLink
-                key={link.href}
-                href={link.href}
+              <Link
+                to={link.href}
+                smooth={true}
+                duration={500}
                 style={{ textDecoration: "none" }}
-                className="cursor-pointer text-sm md:text-lg font-medium  hover:text-[#0081FF]"
+                className="cursor-pointer text-sm md:text-lg font-medium  hover:text-primary"
               >
                 {" "}
                 <motion.span>{link.label} </motion.span>
-              </MotionLink>
+              </Link>
             </motion.li>
           );
         })}
