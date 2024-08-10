@@ -1,26 +1,24 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import heroImage from '../../../public/images/heroimage.png';
-import { NavBarSection } from './component/navbar';
-import { cambay, coustard, leckerliOne, montserrat } from '../../layout';
+"use client";
+import React from "react";
+
+import { NavBarSection } from "./navbar";
 const HeroSection = () => {
   return (
     <div
       id="hero"
       className="relative bg-cover bg-center bg-no-repeat h-screen bg-hero-image w-full"
     >
-      <div className="absolute w-full top-0">
+      <div className=" w-full fixed top-0">
         <NavBarSection />
       </div>
       <div className=" container mx-auto absolute w-full top-12 flex p-20 m-8 ">
         <div className="flex-1  mt-8 ">
           <div className="flex flex-col text-white gap-6 ">
-            <span className="text-lg  md:text-[24px] font-leckerli font-bold">
+            <span className={"text-lg  md:text-[24px] font-leckerli font-bold"}>
               Hi there!
             </span>
             <span className="text-4xl  font-bold">
-              I'm{' '}
+              I'm{" "}
               <span className="text-[#0081FF] text-lg md:text-[40px] font-extrabold">
                 Daniel Ray
               </span>
@@ -32,7 +30,7 @@ const HeroSection = () => {
               with unrivaled creativity.
             </p>
             <div className=" rounded-3xl shadow-md  bg-[#303030] text-[10px] md:text-sm lg:text-lg   px-4 w-40 py-2 text-center">
-              {' '}
+              {" "}
               ABOUT ME
             </div>
           </div>

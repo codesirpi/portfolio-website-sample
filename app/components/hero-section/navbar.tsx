@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
-import logo from "../../../../public/images/logo.png";
+import logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
 export const NavBarSection = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -100,7 +100,7 @@ export const NavBarSection = () => {
   ];
   const MotionLink = motion(Link);
   return (
-    <div className=" w-full mx-auto h-full  md:h-[88px] text-white flex justify-between items-center bg-white md:bg-black   py-4 px-8">
+    <div className=" w-full mx-auto h-full  md:h-[88px] text-white flex justify-between items-center bg-white md:bg-transparent   py-4 px-8">
       <div className="text-2xl font-bold flex gap-2">
         {" "}
         <Image src={logo} width={20} height={20} alt="Picture of the author" />
