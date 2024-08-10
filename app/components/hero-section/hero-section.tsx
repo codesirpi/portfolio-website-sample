@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className=" w-full fixed top-0">
         <NavBarSection />
       </div>
-      <div className=" container mx-auto absolute w-full top-12 flex m-10 ml-10 pt-24">
+      <div className=" container mx-auto absolute w-full top-12 flex m-10 px-10 pt-24">
         <div className="flex-1  mt-8 ">
           <div className="flex flex-col text-white md:gap-10 ">
             <span className={"text-lg  md:text-[28px] font-leckerli"}>
