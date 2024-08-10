@@ -1,14 +1,14 @@
 import React from "react";
-import AboutInfo from "./about-info";
-import AboutDetails from "./about-details";
-import AboutContact from "./about-contact";
+import Info from "./info";
+import Details from "./details";
+import Contact from "./contact";
 
 const AboutSection = () => {
   return (
     <div className="bg-[#0081FF] text-white  w-full flex flex-col items-center">
-      <AboutInfo />
-      <AboutDetails />
-      <AboutContact />
+      <Info />
+      <Details />
+      <Contact />
     </div>
   );
 };

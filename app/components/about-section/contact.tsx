@@ -1,53 +1,58 @@
 import Image from "next/image";
 import React from "react";
-import facebook from "../../assets/about-section/facebook.svg";
-import twitter from "../../assets/about-section/twitter.svg";
-import linkedin from "../../assets/about-section/linkedin.svg";
-import dribble from "../../assets/about-section/dribble.svg";
-import behance from "../../assets/about-section/behance.svg";
-import pinInterest from "../../assets/about-section/pin-interest.svg";
-import instagram from "../../assets/about-section/instagram.svg";
-import youtube from "../../assets/about-section/youtube.svg";
+import { Icon } from "@iconify/react";
+// import facebook from "../../assets/about-section/facebook.svg";
+// import twitter from "../../assets/about-section/twitter.svg";
+// import linkedin from "../../assets/about-section/linkedin.svg";
+// import dribble from "../../assets/about-section/dribble.svg";
+// import behance from "../../assets/about-section/behance.svg";
+// import pinInterest from "../../assets/about-section/pin-interest.svg";
+// import instagram from "../../assets/about-section/instagram.svg";
+// import youtube from "../../assets/about-section/youtube.svg";
 import { cambay } from "@/app/layout";
 
-const AboutContact = () => {
+const Contact = () => {
   const SocialMediaData = [
     {
-      image: facebook,
+      image: "mingcute:facebook-fill",
       alt: "facebook-icon",
       url: "https://www.facebook.com/",
     },
     {
-      image: twitter,
+      image: "mingcute:twitter-fill",
       alt: "twitter-icon",
       url: "https://x.com/",
     },
     {
-      image: linkedin,
+      image: "mingcute:linkedin-fill",
       alt: "linkedin-icon",
       url: "https://in.linkedin.com/",
     },
     {
-      image: dribble,
+      image: "mingcute:dribbble-fill",
       alt: "dribble-icon",
       url: "https://dribbble.com/",
     },
     {
-      image: behance,
+      image: "mage:behance",
       alt: "behance-icon",
       url: "https://behance.net/",
     },
     {
-      image: pinInterest,
+      image: "mdi:pinterest",
       alt: "pinInterest-icon",
       url: "https://www.pinterest.com/",
     },
     {
-      image: instagram,
+      image: "ri:instagram-fill",
       alt: "instagram-icon",
       url: "https://www.instagram.com/",
     },
-    { image: youtube, alt: "youtube-icon", url: "https://www.youtube.com/" },
+    {
+      image: "ant-design:youtube-filled",
+      alt: "youtube-icon",
+      url: "https://www.youtube.com/",
+    },
   ];
 
   return (
@@ -59,10 +64,11 @@ const AboutContact = () => {
         <div className="flex gap-x-[20px] gap-y-7 flex-wrap  md:w-[255px] md:gap-x-7 md:justify-end xl:w-fit">
           {SocialMediaData.map((data, index) => (
             <a key={index} href={data.url} target="blank">
-              <Image
-                src={data.image}
-                alt={data.alt}
-                className="cursor-pointer"
+              <Icon
+                icon={data.image}
+                width={24}
+                height={24}
+                className="hover:text-[yellow]"
               />
             </a>
           ))}
@@ -72,4 +78,4 @@ const AboutContact = () => {
   );
 };
 
-export default AboutContact;
+export default Contact;
