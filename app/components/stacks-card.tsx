@@ -1,6 +1,7 @@
-import React from "react";
-import { cambay, montserrat } from "../layout";
-import { Icon } from "@iconify/react";
+import React from 'react';
+import { cambay, montserrat } from '../utils/fonts';
+
+import { Icon } from '@iconify/react';
 
 export const StacksCard: React.FC<{
   projectCount: number;
@@ -29,12 +30,12 @@ export const StacksCard: React.FC<{
         icon={iconSource}
         width={64}
         height={64}
-        color={iconColor ? iconColor : ""}
+        color={iconColor ? iconColor : ''}
       />
       <div
         className={`lg:text-[52px] font-extrabold text-4xl  ${countColor} ${montserrat.className}`}
       >
-        {projectCount}{" "}
+        {projectCount}{' '}
         <span
           className={`lg:text-[24px] text-lg font-normal w-full ${projectTextColor} ${cambay.className}`}
         >

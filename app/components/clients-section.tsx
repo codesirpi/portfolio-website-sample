@@ -1,12 +1,12 @@
-import React from "react";
-import ProfileIcon from "../assets/profile.png";
-import Client1 from "../assets/client-4.png";
-import Client2 from "../assets/client-3.png";
-import Client3 from "../assets/client-2.png";
-import Client4 from "../assets/client-1.png";
+import React from 'react';
+import ProfileIcon from '../assets/profile.png';
+import Client1 from '../assets/client-4.png';
+import Client2 from '../assets/client-3.png';
+import Client3 from '../assets/client-2.png';
+import Client4 from '../assets/client-1.png';
 
-import Image from "next/image";
-import { cambay, coustard, leckerliOne, montserrat } from "../layout";
+import Image from 'next/image';
+import { cambay, coustard, leckerliOne, montserrat } from '../utils/fonts';
 
 export const ClientsSection = () => {
   return (
@@ -26,7 +26,7 @@ export const ClientsSection = () => {
         <div
           className={`text-center lg:text-[100px] text-grey-100 absolute text-[150px] md:left-[50%] md:top-2 top-8 left-[40%] z-1 ${coustard.className}`}
         >
-          “{" "}
+          “{' '}
         </div>
         <div
           className={`text-center text-sm lg:text-[20px] leading-7 z-10 ${coustard.className}`}

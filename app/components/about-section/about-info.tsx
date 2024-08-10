@@ -1,5 +1,5 @@
-import { cambay, leckerliOne, montserrat } from "@/app/layout";
-import React from "react";
+import { cambay, leckerliOne, montserrat } from '../../utils/fonts';
+import React from 'react';
 
 const AboutInfo = () => {
   return (
